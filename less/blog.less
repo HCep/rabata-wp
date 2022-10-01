@@ -1,0 +1,31 @@
+@import 'variables.less';
+@import 'mixins.less';
+.title-projects{
+    font-size:24px;
+    color:@heading-section;
+    font-weight:600;
+    padding-bottom:30px;
+    &:hover, &:focus, &:active{
+        text-decoration: none;
+        color:@heading-section;
+    }
+}
+.excerpt-projects{
+    font-size:18px;
+}
+.show-more-projects{
+    background-color:@heading-section;
+   outline:0px;
+   border:0px;
+    .upper;
+    font-size:16px;
+    padding:10px 15px;
+    float:right;
+    a{
+        color:white;
+        &:hover, &:focus, &:active{
+            color:white;
+            text-decoration: none;
+        }
+    }
+}

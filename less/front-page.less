@@ -1,0 +1,76 @@
+@import 'variables.less';
+@import 'mixins.less';
+.header-banner{
+    padding:10px;
+    @media @large{
+        padding:115px;
+    }
+}
+.heading-separator{
+   display:inline-block;
+   padding-bottom:20px;
+   border-bottom:1px solid @separator-color;
+}
+
+.portfolio-item {
+    height: 245px;
+    margin-right: 10px;
+    max-width: 332px;
+    overflow:hidden;
+    .portfolio-back{
+            img{
+                filter:brightness(60%);
+            }
+    }
+   
+    .portfolio-name{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        font-size:18px;
+    }
+}
+.opinie-back{
+    background-repeat:no-repeat; 
+    background-position:bottom;
+    @media @medium{
+        background-position:center;
+    }
+}
+.container-opinion{
+    display:flex;
+ 
+
+}
+.contener-portfolio{
+    max-width:100%;
+    @media @large{
+     max-width:1430px;
+    }
+}
+.opinion-content{
+    padding-bottom:20px;
+    width:70%;
+    @media @medium{
+        width:65%;
+    }
+}
+.image-opinion{
+    background-color:@accent-color;
+    padding:3px;
+    border-radius:100%;
+}
+.button-icon-right{
+    a{
+        strong{
+            padding-right:10px;
+        }
+    }
+}
+.portfolio-cnt{
+    justify-content: center;
+    @media @medium{
+        justify-content: space-between;
+    }
+}

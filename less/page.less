@@ -1,0 +1,81 @@
+@import 'variables.less';
+@import 'mixins.less';
+.banner-container{
+    height:470px;
+    max-height:470px;
+    background-color:#164014;
+    color:@text-lightest;
+
+}
+.banner-heading{
+    font-size:48px;
+    font-weight:bold;
+}
+.banner-breadcrumbs{
+    a{
+        color:White!important;
+        padding:0 25px 0px 25px;
+    }
+   
+    span#breadcrumbs{
+       
+        strong{
+            padding:0px 0px 0px 25px;
+        }
+    }
+}
+//kontakt
+.form-input, .form-input:active, .form-input:focus{
+    padding:15px;
+    border:1px solid #99D096;
+    color:@text-paragraph;
+    width:100%;
+    font-size:18px;
+     margin:0px auto 20px auto;
+     outline:0px;
+}
+textarea.form-input{
+    height:180px;
+}
+.submit-button{
+    padding:10px 15px;
+    border:0px!important;
+    color:white;
+    .upper;
+    outline:0px;
+    font-weight:bold;
+    background-color:@background-middle;
+    cursor: pointer;
+}
+::placeholder{
+    color:@text-paragraph;
+}
+.border-green{
+    border:1px solid #99D096;
+}
+
+
+//portfolio
+.owl-prev, .owl-next{
+    position:absolute;
+    display:block!important;
+    opacity:1!important;
+    border-radius:100%!important;
+    background-color:#E5F3E5!important;
+    padding:60px!important;
+}
+.owl-prev{
+left:-10%!important;
+} 
+.owl-next{
+    right:-10%!important;
+}
+.carousel-slider__item {
+    filter:brightness(60%);
+}
+.image-project-cnt{
+    height: 245px;
+    margin-right: 10px;
+    max-width: 332px;
+    overflow:hidden;
+}

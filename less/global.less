@@ -1,0 +1,145 @@
+@import 'variables.less';
+@import 'mixins.less';
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    font-family:'Barlow', sans-serif;
+}
+html, body{
+    overflow-x:hidden;
+}
+body{
+   
+    max-width:1920px;
+    margin:0 auto;
+}
+.row{
+    margin-left:0;
+    margin-right:0;
+}
+h2{
+    font-size:35px!important;
+    
+    @media @medium{
+        font-size:48px!important;
+    }
+}
+p{
+    font-size:16px;
+}
+.wp-block-columns{
+    margin-bottom:0px;
+}
+button:active, button:focus{
+    outline:0px!important;
+}
+button.next, button.prev, button.next:active, button.prev:focus{
+    border:0px!important;
+    outline:0px!important;;
+    background-color:transparent!important;;
+    
+}
+//pagintaion
+.pagintaion-container{
+    display:flex;
+    width:100%;
+    justify-content:center;
+    align-items:center;
+    height:100px;
+    padding:60px 0px 120px 0px;
+}
+.pagintaion-content{
+    display:flex;
+    align-items: baseline;
+    width:154px;
+}
+
+
+.page-numbers:last-child, .page-numbers:first-child{
+    position:relative;
+    display:block;
+    
+    
+
+}
+.page-numbers:last-child:before, .page-numbers:first-child:after{
+    content:'';
+    display:block;
+    position:absolute;
+    
+    width:16px;
+    height:16px;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.page-numbers,.page-numbers:hover, .page-numbers:focus{
+    text-decoration:none;
+}
+.page-numbers{
+    font-size:18px;
+    padding:0px 15px;
+    color:#99D096;
+    
+}
+.page-numbers:hover, .page-numbers:focus{
+    color:#99D096;
+
+}
+.current{
+    font-size:22px;
+    height:5px;
+}
+.next, .prev, .next:focus, .prev:focus, .next:hover, .prev:hover{
+    width:0px;
+    padding:0px;
+    color:white;
+    text-decoration: none;
+    z-index:99999;
+}
+.text-dark{
+    a{
+        color:@text-dark;
+    }
+}
+
+.mobile-none{
+    display:none;
+    @media @medium{
+        display:block;
+    }
+}
+.desktop-none{
+    display:block;
+    @media @medium{
+        display:none;
+    }
+}
+.wp-block-columns:where(.has-background){
+    padding-left:0px!important;
+    padding-right:0px!important;
+}
+.has-black-color{
+    p{
+        a{
+            color:black;
+            &:hover{
+                color:black;
+            }
+        }
+    }
+
+}
+a{
+    &:hover{
+        text-decoration:none;
+    }
+}
+figure{
+    a{
+        img{
+            max-height:300px;
+        }
+    }
+}

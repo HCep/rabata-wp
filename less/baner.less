@@ -1,0 +1,33 @@
+@import 'variables.less';
+@import 'mixins.less';
+.container-text-banner{
+    position:relative;
+    top:0px;
+    @media @large{
+        top:-50px;
+    }
+}
+.logo-banner{
+    display:block;
+    margin:10px auto;
+    @media @medium{
+        margin:0px;
+    }
+}
+.title-banner{
+    font-size:35px;
+    margin-bottom:45px;
+   
+    @media @medium {
+        font-size:48px;
+       
+    }
+  
+}
+.content-banner{
+    font-weight:600;
+    font-size:18px;
+    @media @medium {
+        font-size:20px;
+    }
+}
